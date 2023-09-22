@@ -1,5 +1,11 @@
+-- Active: 1695416737359@@127.0.0.1@5432@vet_clinic
 /* Database schema to keep the structure of entire database. */
 
 CREATE TABLE animals (
-    name varchar(100)
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    date_of_birth DATE,
+    escape_attempts INT,
+    neutered BOOLEAN,
+    weight_kg DECIMAL(10, 2)
 );
