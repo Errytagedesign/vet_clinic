@@ -54,7 +54,9 @@ WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 
 UPDATE animals
-SET species = 'unspecified'
+SET species = 'unspecified';
+
+
 SELECT *
 FROM animals;
 
@@ -89,7 +91,13 @@ FROM animals
 WHERE species = 'pokemon';
 
 
-COMMIT ---------------DELETE  animals table and ROLLBACK---------
+COMMIT;
+
+
+SELECT *
+FROM animals;
+
+---------------DELETE  animals table and ROLLBACK---------
  BEGIN;
 
 
